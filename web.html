@@ -1,0 +1,3441 @@
+<p class="webform-padding-sm webform-right">
+    <strong>["Anexe la SNC"]</strong>
+    <br />
+    “["Prezentarea situatiilor financiare"]”
+    <br />
+    ["Aprobat de Ministerul Finantelor"]
+    <br />
+    ["al Republicii Moldova"]
+</p>
+
+<h2 class="webform-padding-sm webform-center">
+    SITUAȚIILE FINANCIARE
+</h2>
+
+<p class="webform-padding-sm webform-center">
+    @nalogPeriodType;@nalogPeriodLetter;@nalogPeriodYear;
+    <span>["pentru perioada"] @dec_period_from; - @dec_period_to;</span>
+    <span class="lichidare">["de lichidare"] @dec_lichidare;</span>
+</p>
+
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Entitatea"]:</span> @dec_fiscCod_name;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod CUIÎO"]:</span> @dec_fiscCod_cuiio;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod IDNO"]:</span>@dec_fiscCod_fiscal;
+</p>
+<br>
+
+<p class="webform-padding-sm">["Sediul"]:</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["MD"]:</span>@dec_fiscCod_postal;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Raionul(municipiul)"]:</span>@dec_fiscCod_fisc;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod CUATM"]:</span>@dec_fiscCod_cuatm;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Strada"]:</span>@dec_fiscCod_street;
+</p>
+<br>
+
+<div class="webform-select2-inline webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Activitatea principală"]:</span>@dec_fiscCod_caem;
+</div>
+<div class="webform-select2-inline webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Forma de proprietate"]:</span>@dec_fiscCod_cfp;
+</div>
+<div class="webform-select2-inline webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Forma organizatorico-juridică"]:</span>@dec_fiscCod_cfoj;
+</div>
+<br>
+
+<p class="webform-padding-sm">["Date de contact"]:</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Telefon"]:</span>@dec_fiscCod_telefon;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["WEB"]:</span>@dec_fiscCod_web;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["E-mail"]:</span> @dec_fiscCod_email;
+</p>
+<p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["Numele și coordonatele al
+        contabilului-șef"]:</span> Dl (dna) @dec_contabil_name; Tel. @dec_contabil_telefon;</p>
+<br>
+
+<div>
+    <p class="webform-padding-sm display-inline">
+        <span class="webform-bold webform-right-sm">["Numărul mediu al salariaților în perioada de gestiune"]:</span>
+        @dec_fiscCod_nrEmployees; <span class="webform-bold">["persoane"].</span>
+    </p>
+    <p class="webform-padding-sm employees-absence display-inline">
+        <span class="webform-bold">["Confirmați lipsa salariaților"]</span> @dec_fiscCod_employeesAbs;
+    </p>
+</div>
+<br>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Persoanele responsabile de semnarea situațiilor financiare"]*</span>
+    @dec_pers_respons;
+</p>
+<br><br><br>
+
+<p class="webform-padding-sm webform-right">
+    <span class="webform-bold">["Unitatea de măsură: leu"]</span>
+</p>
+<br><br><br>
+
+<h3 align="center">BILANŢUL</h3>
+<p align="right">Anexa 1</p>
+<p align="center">
+    la @dec_table1_row_date;
+</p>
+<div align="center">
+    <table class="annex-1" width="100%">
+        <colgroup>
+            <col width="10%">
+            <col width="40%">
+            <col width="10%">
+            <col width="20%">
+            <col width="20%">
+        </colgroup>
+        <tr>
+            <th rowspan="2">
+                <p align="center">
+                    ["Nr. cpt."]
+                </p>
+            </th>
+            <th rowspan="2">
+                <p align="center">
+                    ["Indicatori"]
+                </p>
+            </th>
+            <th rowspan="2">
+                <p align="center">
+                    ["Cod rd"].
+                </p>
+            </th>
+            <th colspan="2">
+                <p align="center">
+                    ["Sold la"]
+                </p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">
+                    ["Începutul perioadei de gestiune"]
+                </p>
+            </th>
+            <th>
+                <p align="center">
+                    ["Sfîrșitul perioadei de gestiune"]
+                </p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">
+                    <strong>1</strong>
+                </p>
+            </th>
+            <th>
+                <p align="center">
+                    <strong>2</strong>
+                </p>
+            </th>
+            <th>
+                <p align="center">
+                    <strong>3</strong>
+                </p>
+            </th>
+            <th>
+                <p align="center">
+                    <strong>4</strong>
+                </p>
+            </th>
+            <th>
+                <p align="center">
+                    <strong>5</strong>
+                </p>
+            </th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p align="center">
+                    <strong>["A C T I V"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="42">
+                <p align="center">
+                    A.
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>["ACTIVE IMOBILIZATE"]</strong>
+                </p>
+                <br>
+                <p>
+                    <strong>I. ["Imobilizări necorporale"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Imobilizări necorporale în curs de execuție"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    010
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r010c4;
+            </td>
+            <td>
+                @dec_table1_row_r010c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Imobilizări necorporale în exploatare, total"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    020
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r020c4;
+            </td>
+            <td>
+                @dec_table1_row_r020c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["din care:"]
+                </p>
+                <br>
+                <p>
+                    2.1. ["concesiuni, licențe și mărci"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    021
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r021c4;
+            </td>
+            <td>
+                @dec_table1_row_r021c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.2. ["drepturi de autor și titluri de protecție"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    022
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r022c4;
+            </td>
+            <td>
+                @dec_table1_row_r022c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.3. ["programe informatice"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    023
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r023c4;
+            </td>
+            <td>
+                @dec_table1_row_r023c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.4. ["alte imobilizări necorporale"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    024
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r024c4;
+            </td>
+            <td>
+                @dec_table1_row_r024c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Fond comercial"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    030
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r030c4;
+            </td>
+            <td>
+                @dec_table1_row_r030c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Avansuri acordate pentru imobilizări necorporale"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    040
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r040c4;
+            </td>
+            <td>
+                @dec_table1_row_r040c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total imobilizări necorporale"]</strong>
+                </p>
+                <p>(rd.010 + rd.020 + rd.030 + rd.040)</p>
+            </td>
+            <td>
+                <p align="center">
+                    050
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r050c4;
+            </td>
+            <td>
+                @dec_table1_row_r050c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>II. ["Imobilizări corporale"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Imobilizări corporale în curs de execuție"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    060
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r060c4;
+            </td>
+            <td>
+                @dec_table1_row_r060c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Terenuri"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    070
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r070c4;
+            </td>
+            <td>
+                @dec_table1_row_r070c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Mijloace fixe, total"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    080
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r080c4;
+            </td>
+            <td>
+                @dec_table1_row_r080c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["din care:"]
+                </p>
+                <br>
+                <p>
+                    3.1. ["clădiri"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    081
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r081c4;
+            </td>
+            <td>
+                @dec_table1_row_r081c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3.2. ["construcții speciale"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    082
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r082c4;
+            </td>
+            <td>
+                @dec_table1_row_r082c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3.3. ["mașini, utilaje și instalații tehnice"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    083
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r083c4;
+            </td>
+            <td>
+                @dec_table1_row_r083c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3.4. ["mijloace de transport"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    084
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r084c4;
+            </td>
+            <td>
+                @dec_table1_row_r084c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3.5. ["inventar și mobilier"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    085
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r085c4;
+            </td>
+            <td>
+                @dec_table1_row_r085c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3.6. ["alte mijloace fixe"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    086
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r086c4;
+            </td>
+            <td>
+                @dec_table1_row_r086c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Resurse minerale"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    090
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r090c4;
+            </td>
+            <td>
+                @dec_table1_row_r090c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    5. ["Active biologice imobilizate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    100
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r100c4;
+            </td>
+            <td>
+                @dec_table1_row_r100c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    6. ["Investiții imobiliare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    110
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r110c4;
+            </td>
+            <td>
+                @dec_table1_row_r110c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    7. ["Avansuri acordate pentru imobilizări corporale"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    120
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r120c4;
+            </td>
+            <td>
+                @dec_table1_row_r120c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total imobilizări corporale"]</strong>
+                </p>
+                <p>(rd.060 + rd.070 + rd.080 + rd.090 + rd.100 + rd.110 + rd.120)</p>
+            </td>
+            <td>
+                <p align="center">
+                    130
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r130c4;
+            </td>
+            <td>
+                @dec_table1_row_r130c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>III. ["Investiții financiare pe termen lung"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Investiții financiare pe termen lung în părți neafiliate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    140
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r140c4;
+            </td>
+            <td>
+                @dec_table1_row_r140c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Investiții financiare pe termen lung în părți afiliate, total"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    150
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r150c4;
+            </td>
+            <td>
+                @dec_table1_row_r150c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["din care:"]
+                </p>
+                <br>
+                <p>
+                    2.1. ["acțiuni și cote de participație deținute în părțile afiliate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    151
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r151c4;
+            </td>
+            <td>
+                @dec_table1_row_r151c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.2 ["împrumuturi acordate părților afiliate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    152
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r152c4;
+            </td>
+            <td>
+                @dec_table1_row_r152c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.3 ["împrumuturi acordate aferente intereselor de participare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    153
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r153c4;
+            </td>
+            <td>
+                @dec_table1_row_r153c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.4 ["alte investiții financiare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    154
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r154c4;
+            </td>
+            <td>
+                @dec_table1_row_r154c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total investiții financiare pe termen lung"]</strong>
+                </p>
+                <p>(rd.140 + rd.150)</p>
+            </td>
+            <td>
+                <p align="center">
+                    160
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r160c4;
+            </td>
+            <td>
+                @dec_table1_row_r160c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>IV. ["Creanțe pe termen lung și alte active imobilizate"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Creanțe comerciale pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    170
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r170c4;
+            </td>
+            <td>
+                @dec_table1_row_r170c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Creanțe ale părților afiliate pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    180
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r180c4;
+            </td>
+            <td>
+                @dec_table1_row_r180c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["inclusiv:"] ["creanțe aferente intereselor de participare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    181
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r181c4;
+            </td>
+            <td>
+                @dec_table1_row_r181c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Alte creanțe pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    190
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r190c4;
+            </td>
+            <td>
+                @dec_table1_row_r190c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Cheltuieli anticipate pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    200
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r200c4;
+            </td>
+            <td>
+                @dec_table1_row_r200c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    5. ["Alte active imobilizate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    210
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r210c4;
+            </td>
+            <td>
+                @dec_table1_row_r210c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total creanțe pe termen lung și alte active imobilizate"]</strong>
+                </p>
+                <p>(rd.170 + rd.180 + rd.190 + rd.200 + rd.210)</p>
+            </td>
+            <td>
+                <p align="center">
+                    220
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r220c4;
+            </td>
+            <td>
+                @dec_table1_row_r220c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL ACTIVE IMOBILIZATE"]</strong>
+                </p>
+                <p>(rd.050 + rd.130 + rd.160 + rd.220)</p>
+            </td>
+            <td>
+                <p align="center">
+                    230
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r230c4;
+            </td>
+            <td>
+                @dec_table1_row_r230c5;
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="28">
+                <p align="center">
+                    B.
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>["ACTIVE CIRCULANTE"]</strong>
+                </p>
+                <br>
+                <p>
+                    <strong>I. ["Stocuri"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Materiale și obiecte de mică valoare și scurtă durată"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    240
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r240c4;
+            </td>
+            <td>
+                @dec_table1_row_r240c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Active biologice circulante"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    250
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r250c4;
+            </td>
+            <td>
+                @dec_table1_row_r250c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Producția în curs de execuție"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    260
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r260c4;
+            </td>
+            <td>
+                @dec_table1_row_r260c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Produse și mărfuri"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    270
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r270c4;
+            </td>
+            <td>
+                @dec_table1_row_r270c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    5. ["Avansuri acordate pentru stocuri"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    280
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r280c4;
+            </td>
+            <td>
+                @dec_table1_row_r280c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total stocuri"]</strong>
+                </p>
+                <p>(rd.240 + rd.250 + rd.260 + rd.270 + rd.280)</p>
+            </td>
+            <td>
+                <p align="center">
+                    290
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r290c4;
+            </td>
+            <td>
+                @dec_table1_row_r290c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>II. ["Creanțe curente și alte active circulante"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Creanțe comerciale curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    300
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r300c4;
+            </td>
+            <td>
+                @dec_table1_row_r300c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Creanțe ale părților afiliate curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    310
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r310c4;
+            </td>
+            <td>
+                @dec_table1_row_r310c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["inclusiv"]: ["creanțe aferente intereselor de participare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    311
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r311c4;
+            </td>
+            <td>
+                @dec_table1_row_r311c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Creanțe ale bugetului"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    320
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r320c4;
+            </td>
+            <td>
+                @dec_table1_row_r320c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Creanțele ale personalului"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    330
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r330c4;
+            </td>
+            <td>
+                @dec_table1_row_r330c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    5. ["Alte creanțe curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    340
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r340c4;
+            </td>
+            <td>
+                @dec_table1_row_r340c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    6. ["Cheltuieli anticipate curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    350
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r350c4;
+            </td>
+            <td>
+                @dec_table1_row_r350c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    7. ["Alte active circulante"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    360
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r360c4;
+            </td>
+            <td>
+                @dec_table1_row_r360c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total creanțe curente și alte active circulante"]</strong>
+                </p>
+                <p>(rd.300 + rd.310 + rd.320 + rd.330 + rd.340 + rd.350 + rd.360)</p>
+            </td>
+            <td>
+                <p align="center">
+                    370
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r370c4;
+            </td>
+            <td>
+                @dec_table1_row_r370c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>III. ["Investiții financiare curente"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Investiții financiare curente în părți neafiliate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    380
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r380c4;
+            </td>
+            <td>
+                @dec_table1_row_r380c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Investiții financiare curente în părți afiliate, total"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    390
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r390c4;
+            </td>
+            <td>
+                @dec_table1_row_r390c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>["din care:"]</p>
+                <br>
+                <p>
+                    2.1. ["acțiuni și cote de participație deținute în părțile afiliate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    391
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r391c4;
+            </td>
+            <td>
+                @dec_table1_row_r391c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.2. ["împrumuturi acordate părților afiliate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    392
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r392c4;
+            </td>
+            <td>
+                @dec_table1_row_r392c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.3. ["împrumuturi acordate aferente intereselor de participare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    393
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r393c4;
+            </td>
+            <td>
+                @dec_table1_row_r393c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.4. ["alte investiții financiare în părți afiliate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    394
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r394c4;
+            </td>
+            <td>
+                @dec_table1_row_r394c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total investiții financiare curente"]</strong>
+                </p>
+                <p>(rd.380 + rd.390)</p>
+            </td>
+            <td>
+                <p align="center">
+                    400
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r400c4;
+            </td>
+            <td>
+                @dec_table1_row_r400c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>IV. ["Numerar și documente bănești"]</strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    410
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r410c4;
+            </td>
+            <td>
+                @dec_table1_row_r410c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL ACTIVE CIRCULANTE"]</strong>
+                </p>
+                <p>(rd.290 + rd.370 + rd.400 + rd.410)</p>
+            </td>
+            <td>
+                <p align="center">
+                    420
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r420c4;
+            </td>
+            <td>
+                @dec_table1_row_r420c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL ACTIVE"]</strong>
+                </p>
+                <p>(rd.230 + rd.420)</p>
+            </td>
+            <td>
+                <p align="center">
+                    430
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r430c4;
+            </td>
+            <td>
+                @dec_table1_row_r430c5;
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p align="center">
+                    <strong>["P A S I V"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="22">
+                <p align="center">
+                    C.
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>["CAPITAL PROPRIU"]</strong>
+                </p>
+                <br>
+                <p>
+                    <strong>I. ["Capital social și neînregistrat"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Capital social"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    440
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r440c4;
+            </td>
+            <td>
+                @dec_table1_row_r440c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Capital nevărsat"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    450
+                </p>
+            </td>
+            <td>
+                (@dec_table1_row_r450c4;)
+            </td>
+            <td>
+                (@dec_table1_row_r450c5;)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Capital neînregistrat"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    460
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r460c4;
+            </td>
+            <td>
+                @dec_table1_row_r460c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Capital retras"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    470
+                </p>
+            </td>
+            <td>
+                (@dec_table1_row_r470c4;)
+            </td>
+            <td>
+                (@dec_table1_row_r470c5;)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    5. ["Patrimoniul primit de la stat cu drept de proprietate"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    480
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r480c4;
+            </td>
+            <td>
+                @dec_table1_row_r480c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total capital social și neînregistrat"]</strong>
+                </p>
+                <p>(rd.440 + rd.450 + rd.460 + rd.470 + rd.480)</p>
+            </td>
+            <td>
+                <p align="center">
+                    490
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r490c4;
+            </td>
+            <td>
+                @dec_table1_row_r490c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>II. ["Prime de capital"]</strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    500
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r500c4;
+            </td>
+            <td>
+                @dec_table1_row_r500c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>III. ["Rezerve"]</strong>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Capital de rezervă"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    510
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r510c4;
+            </td>
+            <td>
+                @dec_table1_row_r510c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Rezerve statutare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    520
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r520c4;
+            </td>
+            <td>
+                @dec_table1_row_r520c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Alte rezerve"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    530
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r530c4;
+            </td>
+            <td>
+                @dec_table1_row_r530c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total rezerve"]</strong>
+                </p>
+                <p>(rd.510 + rd.520 + rd.530)</p>
+            </td>
+            <td>
+                <p align="center">
+                    540
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r540c4;
+            </td>
+            <td>
+                @dec_table1_row_r540c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>IV. ["Profit (pierdere)"]</strong>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Corecții ale rezultatelor anilor precedenți"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    550
+                </p>
+            </td>
+            <td align="center">
+                <p>X</p>
+            </td>
+            <td>
+                @dec_table1_row_r550c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Profit nerepartizat (pierdere neacoperită) al anilor precedenți"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    560
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r560c4;
+            </td>
+            <td>
+                @dec_table1_row_r560c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Profit net (pierdere netă) al perioadei de gestiune"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    570
+                </p>
+            </td>
+            <td align="center">
+                <p>X</p>
+            </td>
+            <td>
+                @dec_table1_row_r570c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Profit utilizat al perioadei de gestiune"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    580
+                </p>
+            </td>
+            <td align="center">
+                <p>X</p>
+            </td>
+            <td>
+                (@dec_table1_row_r580c5;)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Total profit (pierdere)"]</strong>
+                </p>
+                <p>(rd.550 + rd.560 + rd.570 + rd.580)</p>
+            </td>
+            <td>
+                <p align="center">
+                    590
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r590c4;
+            </td>
+            <td>
+                @dec_table1_row_r590c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>V. ["Rezerve din reevaluare"]</strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    600
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r600c4;
+            </td>
+            <td>
+                @dec_table1_row_r600c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>VI. ["Alte elemente de capital propriu"]</strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    610
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r610c4;
+            </td>
+            <td>
+                @dec_table1_row_r610c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL CAPITAL PROPRIU"]</strong>
+                </p>
+                <p>(rd.490 + rd.500 + rd.540 + rd.590 + rd.600 + rd.610)</p>
+            </td>
+            <td>
+                <p align="center">
+                    620
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r620c4;
+            </td>
+            <td>
+                @dec_table1_row_r620c5;
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="13">
+                <p align="center">
+                    D.
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>["DATORII PE TERMEN LUNG"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Credite bancare pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    630
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r630c4;
+            </td>
+            <td>
+                @dec_table1_row_r630c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Împrumuturi pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    640
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r640c4;
+            </td>
+            <td>
+                @dec_table1_row_r640c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>["din care:"]</p>
+                <br>
+                <p>
+                    2.1. ["împrumuturi din emisiunea de obligațiuni"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    641
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r641c4;
+            </td>
+            <td>
+                @dec_table1_row_r641c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["inclusiv:"] ["împrumuturi din emisiunea de obligațiuni convertibile"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    642
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r642c4;
+            </td>
+            <td>
+                @dec_table1_row_r642c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.2. ["alte împrumuturi pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    643
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r643c4;
+            </td>
+            <td>
+                @dec_table1_row_r643c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Datorii comerciale pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    650
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r650c4;
+            </td>
+            <td>
+                @dec_table1_row_r650c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Datorii față de părțile afiliate pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    660
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r660c4;
+            </td>
+            <td>
+                @dec_table1_row_r660c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["inclusiv:"] ["datorii aferente intereselor de participare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    661
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r661c4;
+            </td>
+            <td>
+                @dec_table1_row_r661c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    5. ["Avansuri primite pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    670
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r670c4;
+            </td>
+            <td>
+                @dec_table1_row_r670c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    6. ["Venituri anticipate pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    680
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r680c4;
+            </td>
+            <td>
+                @dec_table1_row_r680c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    7. ["Alte datorii pe termen lung"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    690
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r690c4;
+            </td>
+            <td>
+                @dec_table1_row_r690c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL DATORII PE TERMEN LUNG"]</strong>
+                </p>
+                <p>(rd.630 + rd.640 + rd.650 + rd.660 + rd.670 + rd.680 + rd.690)</p>
+            </td>
+            <td>
+                <p align="center">
+                    700
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r700c4;
+            </td>
+            <td>
+                @dec_table1_row_r700c5;
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="17">
+                <p align="center">
+                    E.
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>["DATORII CURENTE"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Credite bancare pe termen scurt"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    710
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r710c4;
+            </td>
+            <td>
+                @dec_table1_row_r710c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Împrumuturi pe termen scurt, total"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    720
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r720c4;
+            </td>
+            <td>
+                @dec_table1_row_r720c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["din care:"]
+                </p>
+                <br>
+                <p>
+                    2.1. ["împrumuturi din emisiunea de obligațiuni"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    721
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r721c4;
+            </td>
+            <td>
+                @dec_table1_row_r721c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["inclusiv:"] ["împrumuturi din emisiunea de obligațiuni convertibile"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    722
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r722c4;
+            </td>
+            <td>
+                @dec_table1_row_r722c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2.2. ["alte împrumuturi pe termen scurt"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    723
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r723c4;
+            </td>
+            <td>
+                @dec_table1_row_r723c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Datorii comerciale curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    730
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r730c4;
+            </td>
+            <td>
+                @dec_table1_row_r730c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Datorii față de părțile afiliate curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    740
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r740c4;
+            </td>
+            <td>
+                @dec_table1_row_r740c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    ["inclusiv:"] ["datorii aferente intereselor de participare"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    741
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r741c4;
+            </td>
+            <td>
+                @dec_table1_row_r741c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    5. ["Avansuri primite curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    750
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r750c4;
+            </td>
+            <td>
+                @dec_table1_row_r750c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    6. ["Datorii față de personal"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    760
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r760c4;
+            </td>
+            <td>
+                @dec_table1_row_r760c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    7. ["Datorii privind asigurările sociale și medicale"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    770
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r770c4;
+            </td>
+            <td>
+                @dec_table1_row_r770c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    8. ["Datorii față de buget"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    780
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r780c4;
+            </td>
+            <td>
+                @dec_table1_row_r780c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    9. ["Datorii față de proprietari"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    790
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r790c4;
+            </td>
+            <td>
+                @dec_table1_row_r790c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    10. ["Venituri anticipate curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    800
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r800c4;
+            </td>
+            <td>
+                @dec_table1_row_r800c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    11. ["Alte datorii curente"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    810
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r810c4;
+            </td>
+            <td>
+                @dec_table1_row_r810c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL DATORII CURENTE"]</strong>
+                </p>
+                <p>(rd.710 + rd.720 + rd.730 + rd.740 + rd.750 + rd.760 + rd.770 + rd.780 + rd.790 + rd.800 + rd.810)
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    820
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r820c4;
+            </td>
+            <td>
+                @dec_table1_row_r820c5;
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="7">
+                <p align="center">
+                    F.
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>["PROVIZIOANE"]</strong>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    1. ["Provizioane pentru beneficiile angajaților"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    830
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r830c4;
+            </td>
+            <td>
+                @dec_table1_row_r830c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    2. ["Provizioane pentru garanții acordate cumpărătorilor/clienților"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    840
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r840c4;
+            </td>
+            <td>
+                @dec_table1_row_r840c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    3. ["Provizioane pentru impozite"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    850
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r850c4;
+            </td>
+            <td>
+                @dec_table1_row_r850c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    4. ["Alte provizioane"]
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    860
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r860c4;
+            </td>
+            <td>
+                @dec_table1_row_r860c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL PROVIZIOANE"]</strong>
+                </p>
+                <p>(rd.830 + rd.840 + rd.850 + rd.860)</p>
+            </td>
+            <td>
+                <p align="center">
+                    870
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r870c4;
+            </td>
+            <td>
+                @dec_table1_row_r870c5;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["TOTAL PASIVE"]</strong>
+                </p>
+                <p> (rd.620 + rd.700 + rd.820 + rd.870)</p>
+            </td>
+            <td>
+                <p align="center">
+                    880
+                </p>
+            </td>
+            <td>
+                @dec_table1_row_r880c4;
+            </td>
+            <td>
+                @dec_table1_row_r880c5;
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+
+<h2 align="center">["SITUAŢIA DE PROFIT ŞI PIERDERE"]</h2>
+<p align="center">["de la"] @dec_table2_row_datedela; ["pînă la"] @dec_table2_row_datepinala;</p>
+<p align="right">["Anexa 2"]</p>
+<div align="center">
+    <table class="annex-1" width="100%">
+        <colgroup>
+            <col width="40%">
+            <col width="10%">
+            <col width="25%">
+            <col width="25%">
+        </colgroup>
+
+        <tr>
+            <th rowspan="2">
+                <p align="center">["Indicatori"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Cod rd."]</p>
+            </th>
+            <th colspan="2">
+                <p align="center">["Perioada de gestiune"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">["precedenta"]</p>
+            </th>
+            <th>
+                <p align="center">["curenta"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">1</p>
+            </th>
+            <th>
+                <p align="center">2</p>
+            </th>
+            <th>
+                <p align="center">3</p>
+            </th>
+            <th>
+                <p align="center">4</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>["Venituri din vînzări, total"]</p>
+            </td>
+            <td align="center">010</td>
+            <td>@dec_table2_row_r010c3;</td>
+            <td>@dec_table2_row_r010c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["din care:"]</p>
+                <br>
+                <p>["venituri din vînzarea produselor și mărfurilor"]</p>
+            </td>
+            <td align="center">011</td>
+            <td>@dec_table2_row_r011c3;</td>
+            <td>@dec_table2_row_r011c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri din prestarea serviciilor și executarea lucrărilor"]</p>
+            </td>
+            <td align="center">012</td>
+            <td>@dec_table2_row_r012c3;</td>
+            <td>@dec_table2_row_r012c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri din contracte de construcție"]</p>
+            </td>
+            <td align="center">013</td>
+            <td>@dec_table2_row_r013c3;</td>
+            <td>@dec_table2_row_r013c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri din contracte de leasing"]</p>
+            </td>
+            <td align="center">014</td>
+            <td>@dec_table2_row_r014c3;</td>
+            <td>@dec_table2_row_r014c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri din contracte de microfinanţare"]</p>
+            </td>
+            <td align="center">015</td>
+            <td>@dec_table2_row_r015c3;</td>
+            <td>@dec_table2_row_r015c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["alte venituri din vînzări"]</p>
+            </td>
+            <td align="center">016</td>
+            <td>@dec_table2_row_r016c3;</td>
+            <td>@dec_table2_row_r016c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Costul vînzărilor, total"]</p>
+            </td>
+            <td align="center">020</td>
+            <td>@dec_table2_row_r020c3;</td>
+            <td>@dec_table2_row_r020c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["din care:"]</p>
+                <br>
+                <p>["valoarea contabilă a produselor și mărfurilor vîndute"]</p>
+            </td>
+            <td align="center">021</td>
+            <td>@dec_table2_row_r021c3;</td>
+            <td>@dec_table2_row_r021c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["costul serviciilor prestate și lucrărilor executate terților"]</p>
+            </td>
+            <td align="center">022</td>
+            <td>@dec_table2_row_r022c3;</td>
+            <td>@dec_table2_row_r022c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["costuri aferente contractelor de construcție"]</p>
+            </td>
+            <td align="center">023</td>
+            <td>@dec_table2_row_r023c3;</td>
+            <td>@dec_table2_row_r023c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["costuri aferente contractelor de leasing"]</p>
+            </td>
+            <td align="center">024</td>
+            <td>@dec_table2_row_r024c3;</td>
+            <td>@dec_table2_row_r024c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["costuri aferente contractelor de microfinanţare"]</p>
+            </td>
+            <td align="center">025</td>
+            <td>@dec_table2_row_r025c3;</td>
+            <td>@dec_table2_row_r025c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["alte costuri aferente vînzărilor"]</p>
+            </td>
+            <td align="center">026</td>
+            <td>@dec_table2_row_r026c3;</td>
+            <td>@dec_table2_row_r026c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Profit brut (pierdere brută)"]</strong>
+                    <span>(rd.010 - rd.020)</span>
+                </p>
+            </td>
+            <td align="center">030</td>
+            <td>@dec_table2_row_r030c3;</td>
+            <td>@dec_table2_row_r030c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Alte venituri din activitatea operațională"]</p>
+            </td>
+            <td align="center">040</td>
+            <td>@dec_table2_row_r040c3;</td>
+            <td>@dec_table2_row_r040c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Cheltuieli de distribuire"]</p>
+            </td>
+            <td align="center">050</td>
+            <td>@dec_table2_row_r050c3;</td>
+            <td>@dec_table2_row_r050c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Cheltuieli administrative"]</p>
+            </td>
+            <td align="center">060</td>
+            <td>@dec_table2_row_r060c3;</td>
+            <td>@dec_table2_row_r060c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Alte cheltuieli din activitatea operațională"]</p>
+            </td>
+            <td align="center">070</td>
+            <td>@dec_table2_row_r070c3;</td>
+            <td>@dec_table2_row_r070c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Rezultatul din activitatea operațională: profit (pierdere)"]</strong>
+                    <span>(rd.030 + rd.040 - rd.050 - rd.060 - rd.070)</span>
+                </p>
+            </td>
+            <td align="center">080</td>
+            <td>@dec_table2_row_r080c3;</td>
+            <td>@dec_table2_row_r080c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Venituri financiare, total"]</p>
+            </td>
+            <td align="center">090</td>
+            <td>@dec_table2_row_r090c3;</td>
+            <td>@dec_table2_row_r090c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["din care:"]</p>
+                <br>
+                <p>["venituri din interese de participare"]</p>
+            </td>
+            <td align="center">091</td>
+            <td>@dec_table2_row_r091c3;</td>
+            <td>@dec_table2_row_r091c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["inclusiv:"] ["veniturile obținute de la părțile afiliate"]</p>
+            </td>
+            <td align="center">092</td>
+            <td>@dec_table2_row_r092c3;</td>
+            <td>@dec_table2_row_r092c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri din dobînzi"]</p>
+            </td>
+            <td align="center">093</td>
+            <td>@dec_table2_row_r093c3;</td>
+            <td>@dec_table2_row_r093c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["inclusiv:"] ["veniturile obținute de la părțile afiliate"]</p>
+            </td>
+            <td align="center">094</td>
+            <td>@dec_table2_row_r094c3;</td>
+            <td>@dec_table2_row_r094c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri din alte investiții financiare pe termen lung"]</p>
+            </td>
+            <td align="center">095</td>
+            <td>@dec_table2_row_r095c3;</td>
+            <td>@dec_table2_row_r095c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["inclusiv:"] ["veniturile obținute de la părțile afiliate"]</p>
+            </td>
+            <td align="center">096</td>
+            <td>@dec_table2_row_r096c3;</td>
+            <td>@dec_table2_row_r096c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri aferente ajustărilor de valoare privind investițiile financiare pe termen lung și
+                    curente"]</p>
+            </td>
+            <td align="center">097</td>
+            <td>@dec_table2_row_r097c3;</td>
+            <td>@dec_table2_row_r097c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri din ieșirea investițiilor financiare"]</p>
+            </td>
+            <td align="center">098</td>
+            <td>@dec_table2_row_r098c3;</td>
+            <td>@dec_table2_row_r098c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["venituri aferente diferențelor de curs valutar și de sumă"]</p>
+            </td>
+            <td align="center">099</td>
+            <td>@dec_table2_row_r099c3;</td>
+            <td>@dec_table2_row_r099c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Cheltuieli financiare, total"]</p>
+            </td>
+            <td align="center">100</td>
+            <td>@dec_table2_row_r100c3;</td>
+            <td>@dec_table2_row_r100c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["din care:"]</p>
+                <br>
+                <p>["cheltuieli privind dobînzile"]</p>
+            </td>
+            <td align="center">101</td>
+            <td>@dec_table2_row_r101c3;</td>
+            <td>@dec_table2_row_r101c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["inclusiv:"] ["cheltuielile aferente părților afiliate"]</p>
+            </td>
+            <td align="center">102</td>
+            <td>@dec_table2_row_r102c3;</td>
+            <td>@dec_table2_row_r102c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["cheltuieli aferente ajustărilor de valoare privind investițiile financiare pe termen lung și
+                    curente"]</p>
+            </td>
+            <td align="center">103</td>
+            <td>@dec_table2_row_r103c3;</td>
+            <td>@dec_table2_row_r103c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["cheltuieli aferente ieșirii investițiilor financiare"]</p>
+            </td>
+            <td align="center">104</td>
+            <td>@dec_table2_row_r104c3;</td>
+            <td>@dec_table2_row_r104c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["cheltuieli aferente diferențelor de curs valutar și de sumă"]</p>
+            </td>
+            <td align="center">105</td>
+            <td>@dec_table2_row_r105c3;</td>
+            <td>@dec_table2_row_r105c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Rezultatul: profit (pierdere) financiar(ă)"]</strong>
+                    <span>(rd.090 - rd.100)</span>
+                </p>
+            </td>
+            <td align="center">110</td>
+            <td>@dec_table2_row_r110c3;</td>
+            <td>@dec_table2_row_r110c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Venituri cu active imobilizate și excepționale"]</p>
+            </td>
+            <td align="center">120</td>
+            <td>@dec_table2_row_r120c3;</td>
+            <td>@dec_table2_row_r120c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Cheltuieli cu active imobilizate și excepționale"]</p>
+            </td>
+            <td align="center">130</td>
+            <td>@dec_table2_row_r130c3;</td>
+            <td>@dec_table2_row_r130c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Rezultatul din operațiuni cu active imobilizate și excepționale: profit
+                        (pierdere)"]</strong>
+                    <span>(rd.120 - rd.130)</span>
+                </p>
+            </td>
+            <td align="center">140</td>
+            <td>@dec_table2_row_r140c3;</td>
+            <td>@dec_table2_row_r140c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Rezultatul din alte activități: profit (pierdere)"]</strong>
+                    <span>(rd.110 + rd.140)</span>
+                </p>
+            </td>
+            <td align="center">150</td>
+            <td>@dec_table2_row_r150c3;</td>
+            <td>@dec_table2_row_r150c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Profit (pierdere) pînă la impozitare"]</strong>
+                    <span>(rd.080 + rd.150)</span>
+                </p>
+            </td>
+            <td align="center">160</td>
+            <td>@dec_table2_row_r160c3;</td>
+            <td>@dec_table2_row_r160c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>["Cheltuieli privind impozitul pe venit"]</p>
+            </td>
+            <td align="center">170</td>
+            <td>@dec_table2_row_r170c3;</td>
+            <td>@dec_table2_row_r170c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>["Profit net (pierdere netă) al perioadei de gestiune"]</strong>
+                    <span>(rd.160 - rd.170)</span>
+                </p>
+            </td>
+            <td align="center">180</td>
+            <td>@dec_table2_row_r180c3;</td>
+            <td>@dec_table2_row_r180c4;</td>
+        </tr>
+    </table>
+</div>
+<br>
+
+<h2 align="center">["SITUAŢIA MODIFICĂRILOR CAPITALULUI PROPRIU"]</h2>
+<p align="center">["de la"] @dec_table3_row_datedela; ["pînă la"] @dec_table3_row_datepinala;</p>
+<p align="right">["Anexa 3"]</p>
+<div align="center">
+    <table class="annex-3">
+        <colgroup>
+            <col width="3%">
+            <col width="30%">
+            <col width="7%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+        </colgroup>
+        <tr>
+            <th>
+                <p align="center">["Nr. d/o"]</p>
+            </th>
+            <th>
+                <p align="center">["Indicatori"]</p>
+            </th>
+            <th>
+                <p align="center">["Cod rd"]</p>
+            </th>
+            <th>
+                <p align="center">["Sold la începutul perioadei de gestiune"]</p>
+            </th>
+            <th>
+                <p align="center">["Majorări"]</p>
+            </th>
+            <th>
+                <p align="center">["Diminuări"]</p>
+            </th>
+            <th>
+                <p align="center">["Sold la sfîrşitul perioadei de gestiune"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">1</p>
+            </th>
+            <th>
+                <p align="center">2</p>
+            </th>
+            <th>
+                <p align="center">3</p>
+            </th>
+            <th>
+                <p align="center">4</p>
+            </th>
+            <th>
+                <p align="center">5</p>
+            </th>
+            <th>
+                <p align="center">6</p>
+            </th>
+            <th>
+                <p align="center">7</p>
+            </th>
+        </tr>
+
+        <tr>
+            <td align="center" rowspan="7">I.</td>
+            <td><strong>["Capital social și neînregistrat"]</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1. ["Capital social"]</td>
+            <td align="center">010</td>
+            <td>@dec_table3_row_r010c4;</td>
+            <td>@dec_table3_row_r010c5;</td>
+            <td>@dec_table3_row_r010c6;</td>
+            <td>@dec_table3_row_r010c7;</td>
+        </tr>
+        <tr>
+            <td>2. ["Capital nevărsat"]</td>
+            <td align="center">020</td>
+            <td>(@dec_table3_row_r020c4;)</td>
+            <td>(@dec_table3_row_r020c5;)</td>
+            <td>(@dec_table3_row_r020c6;)</td>
+            <td>(@dec_table3_row_r020c7;)</td>
+        </tr>
+        <tr>
+            <td>3. ["Capital neînregistrat"]</td>
+            <td align="center">030</td>
+            <td>@dec_table3_row_r030c4;</td>
+            <td>@dec_table3_row_r030c5;</td>
+            <td>@dec_table3_row_r030c6;</td>
+            <td>@dec_table3_row_r030c7;</td>
+        </tr>
+        <tr>
+            <td>4. ["Capital retras"]</td>
+            <td align="center">040</td>
+            <td>(@dec_table3_row_r040c4;)</td>
+            <td>(@dec_table3_row_r040c5;)</td>
+            <td>(@dec_table3_row_r040c6;)</td>
+            <td>(@dec_table3_row_r040c7;)</td>
+        </tr>
+        <tr>
+            <td>5. ["Patrimoniul primit de la stat cu drept de proprietate"]</td>
+            <td align="center">050</td>
+            <td>@dec_table3_row_r050c4;</td>
+            <td>@dec_table3_row_r050c5;</td>
+            <td>@dec_table3_row_r050c6;</td>
+            <td>@dec_table3_row_r050c7;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Total capital social și neînregistrat"]</strong></p>
+                <p>(rd.010 + rd.020 + rd.030 + rd.040 + rd.050)</p>
+            </td>
+            <td align="center">060</td>
+            <td>@dec_table3_row_r060c4;</td>
+            <td>@dec_table3_row_r060c5;</td>
+            <td>@dec_table3_row_r060c6;</td>
+            <td>@dec_table3_row_r060c7;</td>
+        </tr>
+        <tr>
+            <td align="center">II.</td>
+            <td><strong>["Prime de capital"]</strong></td>
+            <td align="center">070</td>
+            <td>@dec_table3_row_r070c4;</td>
+            <td>@dec_table3_row_r070c5;</td>
+            <td>@dec_table3_row_r070c6;</td>
+            <td>@dec_table3_row_r070c7;</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="5">III.</td>
+            <td><strong>["Rezerve"]</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1. ["Capital de rezervă"]</td>
+            <td align="center">080</td>
+            <td>@dec_table3_row_r080c4;</td>
+            <td>@dec_table3_row_r080c5;</td>
+            <td>@dec_table3_row_r080c6;</td>
+            <td>@dec_table3_row_r080c7;</td>
+        </tr>
+        <tr>
+            <td>2. ["Rezerve statutare"]</td>
+            <td align="center">090</td>
+            <td>@dec_table3_row_r090c4;</td>
+            <td>@dec_table3_row_r090c5;</td>
+            <td>@dec_table3_row_r090c6;</td>
+            <td>@dec_table3_row_r090c7;</td>
+        </tr>
+        <tr>
+            <td>3. ["Alte rezerve"]</td>
+            <td align="center">100</td>
+            <td>@dec_table3_row_r100c4;</td>
+            <td>@dec_table3_row_r100c5;</td>
+            <td>@dec_table3_row_r100c6;</td>
+            <td>@dec_table3_row_r100c7;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Total rezerve"]</strong></p>
+                <p>(rd.080 + rd.090 + rd.100)</p>
+            </td>
+            <td align="center">110</td>
+            <td>@dec_table3_row_r110c4;</td>
+            <td>@dec_table3_row_r110c5;</td>
+            <td>@dec_table3_row_r110c6;</td>
+            <td>@dec_table3_row_r110c7;</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="6">IV.</td>
+            <td><strong>["Profit (pierdere)"]</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1. ["Corecții ale rezultatelor anilor precedenți"]</td>
+            <td align="center">120</td>
+            <td align="center">X</td>
+            <td>@dec_table3_row_r120c5;</td>
+            <td>@dec_table3_row_r120c6;</td>
+            <td>@dec_table3_row_r120c7;</td>
+        </tr>
+        <tr>
+            <td>2. ["Profit nerepartizat (pierdere neacoperită) al anilor precedenți"]</td>
+            <td align="center">130</td>
+            <td>@dec_table3_row_r130c4;</td>
+            <td>@dec_table3_row_r130c5;</td>
+            <td>@dec_table3_row_r130c6;</td>
+            <td>@dec_table3_row_r130c7;</td>
+        </tr>
+        <tr>
+            <td>3. ["Profit net (pierdere netă) al perioadei de gestiune"]</td>
+            <td align="center">140</td>
+            <td align="center">X</td>
+            <td>@dec_table3_row_r140c5;</td>
+            <td>@dec_table3_row_r140c6;</td>
+            <td>@dec_table3_row_r140c7;</td>
+        </tr>
+        <tr>
+            <td>4. ["Profit utilizat al perioadei de gestiune"]</td>
+            <td align="center">150</td>
+            <td align="center">X</td>
+            <td>(@dec_table3_row_r150c5;)</td>
+            <td>(@dec_table3_row_r150c6;)</td>
+            <td>(@dec_table3_row_r150c7;)</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Total profit (pierdere)"]</strong></p>
+                <p>(rd.120 + rd.130 + rd.140 + rd.150)</p>
+            </td>
+            <td align="center">160</td>
+            <td>@dec_table3_row_r160c4;</td>
+            <td>@dec_table3_row_r160c5;</td>
+            <td>@dec_table3_row_r160c6;</td>
+            <td>@dec_table3_row_r160c7;</td>
+        </tr>
+        <tr>
+            <td align="center">V.</td>
+            <td><strong>["Rezerve din reevaluare"]</strong></td>
+            <td align="center">170</td>
+            <td>@dec_table3_row_r170c4;</td>
+            <td>@dec_table3_row_r170c5;</td>
+            <td>@dec_table3_row_r170c6;</td>
+            <td>@dec_table3_row_r170c7;</td>
+        </tr>
+        <tr>
+            <td align="center">VI.</td>
+            <td><strong>["Alte elemente de capital propriu"]</strong></td>
+            <td align="center">180</td>
+            <td>@dec_table3_row_r180c4;</td>
+            <td>@dec_table3_row_r180c5;</td>
+            <td>@dec_table3_row_r180c6;</td>
+            <td>@dec_table3_row_r180c7;</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p><strong>["Total capital propriu"]</strong></p>
+                <p> (rd.060 + rd.070 + rd.110 + rd.160 + rd.170 + rd.180)</p>
+            </td>
+            <td align="center">190</td>
+            <td>@dec_table3_row_r190c4;</td>
+            <td>@dec_table3_row_r190c5;</td>
+            <td>@dec_table3_row_r190c6;</td>
+            <td>@dec_table3_row_r190c7;</td>
+        </tr>
+    </table>
+</div>
+<br>
+
+<h2 align="center">["SITUAŢIA FLUXURILOR DE NUMERAR"]</h2>
+<p align="center">["de la"] @dec_table4_row_datedela; ["pînă la"] @dec_table4_row_datepinala;</p>
+<p align="right">["Anexa 4"]</p>
+<div align="center">
+    <table class="annex-4">
+        <colgroup>
+            <col width="40%">
+            <col width="10%">
+            <col width="25%">
+            <col width="25%">
+        </colgroup>
+
+        <tr>
+            <th rowspan="2">
+                <p align="center">["Indicatori"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Cod rd"]</p>
+            </th>
+            <th colspan="2">
+                <p align="center">["Perioada de gestiune"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">["precedentă"]</p>
+            </th>
+            <th>
+                <p align="center">["curentă"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">1</p>
+            </th>
+            <th>
+                <p align="center">2</p>
+            </th>
+            <th>
+                <p align="center">3</p>
+            </th>
+            <th>
+                <p align="center">4</p>
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <p><strong>["Fluxuri de numerar din activitatea operațională"]</strong></p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>["Încasări din vînzări"]</td>
+            <td align="center">010</td>
+            <td>@dec_table4_row_r010c3;</td>
+            <td>@dec_table4_row_r010c4;</td>
+        </tr>
+        <tr>
+            <td>["Plăți pentru stocuri și servicii procurate"]</td>
+            <td align="center">020</td>
+            <td>@dec_table4_row_r020c3;</td>
+            <td>@dec_table4_row_r020c4;</td>
+        </tr>
+        <tr>
+            <td>["Plăți către angajați și organe de asigurare socială și medicală"]</td>
+            <td align="center">030</td>
+            <td>@dec_table4_row_r030c3;</td>
+            <td>@dec_table4_row_r030c4;</td>
+        </tr>
+        <tr>
+            <td>["Dobînzi plătite"]</td>
+            <td align="center">040</td>
+            <td>@dec_table4_row_r040c3;</td>
+            <td>@dec_table4_row_r040c4;</td>
+        </tr>
+        <tr>
+            <td>["Plata impozitului pe venit"]</td>
+            <td align="center">050</td>
+            <td>@dec_table4_row_r050c3;</td>
+            <td>@dec_table4_row_r050c4;</td>
+        </tr>
+        <tr>
+            <td>["Alte încasări"]</td>
+            <td align="center">060</td>
+            <td>@dec_table4_row_r060c3;</td>
+            <td>@dec_table4_row_r060c4;</td>
+        </tr>
+        <tr>
+            <td>["Alte plăți"]</td>
+            <td align="center">070</td>
+            <td>@dec_table4_row_r070c3;</td>
+            <td>@dec_table4_row_r070c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Fluxul net de numerar din activitatea operațională"]</strong></p>
+                <p>(rd.010 - rd.020 - rd.030 - rd.040 - rd.050 + rd.060 - rd.070)</p>
+            </td>
+            <td align="center">080</td>
+            <td>@dec_table4_row_r080c3;</td>
+            <td>@dec_table4_row_r080c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Fluxuri de numerar din activitatea de investiții"]</strong></p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>["Încasări din vînzarea activelor imobilizate"]</td>
+            <td align="center">090</td>
+            <td>@dec_table4_row_r090c3;</td>
+            <td>@dec_table4_row_r090c4;</td>
+        </tr>
+        <tr>
+            <td>["Plăți aferente intrărilor de active imobilizate"]</td>
+            <td align="center">100</td>
+            <td>@dec_table4_row_r100c3;</td>
+            <td>@dec_table4_row_r100c4;</td>
+        </tr>
+        <tr>
+            <td>["Dobînzi încasate"]</td>
+            <td align="center">110</td>
+            <td>@dec_table4_row_r110c3;</td>
+            <td>@dec_table4_row_r110c4;</td>
+        </tr>
+        <tr>
+            <td>["Dividende încasate"]</td>
+            <td align="center">120</td>
+            <td>@dec_table4_row_r120c3;</td>
+            <td>@dec_table4_row_r120c4;</td>
+        </tr>
+        <tr>
+            <td>["inclusiv:"] ["dividende încasate din străinătate"]</td>
+            <td align="center">121</td>
+            <td>@dec_table4_row_r121c3;</td>
+            <td>@dec_table4_row_r121c4;</td>
+        </tr>
+        <tr>
+            <td>["Alte încasări (plăți)"]</td>
+            <td align="center">130</td>
+            <td>@dec_table4_row_r130c3;</td>
+            <td>@dec_table4_row_r130c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Fluxul net de numerar din activitatea de investiții"]</strong></p>
+                <p>(rd.090 - rd.100 + rd.110 + rd.120 ± rd.130)</p>
+            </td>
+            <td align="center">140</td>
+            <td>@dec_table4_row_r140c3;</td>
+            <td>@dec_table4_row_r140c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Fluxuri de numerar din activitatea financiară"]</strong></p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>["Încasări sub formă de credite și împrumuturi"]</td>
+            <td align="center">150</td>
+            <td>@dec_table4_row_r150c3;</td>
+            <td>@dec_table4_row_r150c4;</td>
+        </tr>
+        <tr>
+            <td>["Plăți aferente rambursării creditelor și împrumuturilor"]</td>
+            <td align="center">160</td>
+            <td>@dec_table4_row_r160c3;</td>
+            <td>@dec_table4_row_r160c4;</td>
+        </tr>
+        <tr>
+            <td>["Dividende plătite"]</td>
+            <td align="center">170</td>
+            <td>@dec_table4_row_r170c3;</td>
+            <td>@dec_table4_row_r170c4;</td>
+        </tr>
+        <tr>
+            <td>["inclusiv:"] ["dividende plătite nerezidenților"]</td>
+            <td align="center">171</td>
+            <td>@dec_table4_row_r171c3;</td>
+            <td>@dec_table4_row_r171c4;</td>
+        </tr>
+        <tr>
+            <td>["Încasări din operațiuni de capital"]</td>
+            <td align="center">180</td>
+            <td>@dec_table4_row_r180c3;</td>
+            <td>@dec_table4_row_r180c4;</td>
+        </tr>
+        <tr>
+            <td>["Alte încasări (plăți)"]</td>
+            <td align="center">190</td>
+            <td>@dec_table4_row_r190c3;</td>
+            <td>@dec_table4_row_r190c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Fluxul net de numerar din activitatea financiară"]</strong></p>
+                <p>(rd.150 - rd.160 - rd.170 + rd.180 ± rd.190)</p>
+            </td>
+            <td align="center">200</td>
+            <td>@dec_table4_row_r200c3;</td>
+            <td>@dec_table4_row_r200c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Fluxul net de numerar total"]</strong></p>
+                <p>(± rd.080 ± rd.140 ± rd.200)</p>
+            </td>
+            <td align="center">210</td>
+            <td>@dec_table4_row_r210c3;</td>
+            <td>@dec_table4_row_r210c4;</td>
+        </tr>
+        <tr>
+            <td>["Diferențe de curs valutar favorabile (nefavorabile)"]</td>
+            <td align="center">220</td>
+            <td>@dec_table4_row_r220c3;</td>
+            <td>@dec_table4_row_r220c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Sold de numerar la începutul perioadei de gestiune"]</strong></p>
+            </td>
+            <td align="center">230</td>
+            <td>@dec_table4_row_r230c3;</td>
+            <td>@dec_table4_row_r230c4;</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>["Sold de numerar la sfîrşitul perioadei de gestiune"]</strong></p>
+                <p>(± rd.210 ± rd.220 + rd.230)</p>
+            </td>
+            <td align="center">240</td>
+            <td>@dec_table4_row_r240c3;</td>
+            <td>@dec_table4_row_r240c4;</td>
+        </tr>
+    </table>
+</div>
+<br><br>
+
+<h2>["Documente atașate - Notă explicativă (fișierul pdf)"]</h2>
+<br><br>
+<div id="dinamicAttachments">
+    <a href="#" class="grid-addrow element-invisible">["Adaugă rînd"]</a>
+    <div class="grid">
+        <div class="drow container-inline padding-bottom-15">
+            <div class="element-invisible">@dec_dinamicAttachments_row_number;</div>
+            <div>@dec_dinamicAttachments_row_file;</div>
+            <div class="delrow"><a href="#">["Şterge"]</a></div>
+        </div>
+    </div>
+</div>
+<br><br>
