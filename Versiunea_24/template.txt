@@ -1,0 +1,4 @@
+Trebuie de modificat regula 
+--Anexa 1 Valorile trebuie sa fie pozitive inafara de: Doar negative: rd.450
+col.4,5, 470 col.4,5, 580 col.5 Si negative si pozitive: 550 col.5, 560
+col.4,5, 570 col.5, 590 col.4,5, 620 col.4,5

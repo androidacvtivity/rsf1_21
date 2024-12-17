@@ -1,0 +1,46 @@
+#dec_pers_respons {
+    width: 50em;
+}
+
+.lichidare {
+    margin-left: 10px;
+}
+
+#nalogPeriodYear {
+    display: none;
+}
+
+#dec_period_from,
+#dec_period_to {
+    width: 85px;
+}
+
+#dinamicAttachments .clear-file {
+    display: none;
+}
+
+#dinamicAttachments {
+    width: 80%;
+}
+
+#dinamicAttachments .delrow {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+#dinamicAttachments .row {
+    position: relative;
+}
+
+table span.form-item {
+    text-align: right;
+    display: block;
+    margin: 0;
+}
+
+.display-inline {
+    display: inline-block;
+    margin-right: 10px;
+}
