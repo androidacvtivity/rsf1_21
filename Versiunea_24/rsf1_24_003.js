@@ -480,9 +480,9 @@
         msg = concatMessage('57-041', '', Drupal.t("Anexa 1 Valoarea trebuie sa fie pozitivă"));
         validatePositiveFields('.annex-1', msg, 41);
         validateAnnex1(values);
+// 
 
-
-
+// 
         if (!isTableCompleted('table1')) {
             webform.warnings.push({
                 'fieldName': '',
