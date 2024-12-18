@@ -89,7 +89,7 @@
 
         //---------------------------------------------------------------------
 
-        var fieldError = validateFieldNoHieroglyphs('dec_fiscCod_name', values.dec_fiscCod_name);
+        var fieldError = validateFieldNoHieroglyphs('Entitatea', values.dec_fiscCod_name);
         if (fieldError) {
             webform.errors.push({
                 'fieldName': fieldError.fieldName,
