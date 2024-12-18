@@ -1,13 +1,3 @@
-1. Stabilirea unui calendar regulat pentru ședințe de informare (ex. lunar, trimestrial).  
-2. Crearea unui mediu deschis pentru dialog în timpul întâlnirilor.  
-3. Întocmirea fișelor personalizate cu rezultatele evaluărilor și observațiilor copilului.  
-4. Explicarea detaliată a progreselor în fiecare domeniu de dezvoltare (cognitiv, emoțional, fizic, social).  
-5. Trimiterea actualizărilor despre progresul copilului prin e-mail sau aplicații mobile (ex. grupuri de WhatsApp).  
-6. Crearea unor rapoarte vizuale simplificate pentru ușurința înțelegerii (grafice, tabele).  
-7. Furnizarea unor sugestii practice pentru continuarea activităților educaționale și de dezvoltare.  
-8. Consilierea părinților în abordarea dificultăților specifice ale copilului.  
-9. Discutarea strategiilor de sprijin pentru următoarea perioadă, în funcție de progresul copilului.  
-10. Stabilirea unor obiective comune pentru acasă și Centru.  
-11. Încurajarea părinților să trimită feedback despre activitățile realizate acasă.  
-12. Oferirea de răspunsuri rapide la întrebările și preocupările părinților.  
-
+Anexa.3 Valoarea trebuie sa fie pozitivă inafara de rd.020 col.4-7, 040 col.4-
+7, 150 col.5-7 totdeauna negative 120 col.5-7, 130 col.4-7, 140 col.5-7,
+060 col.5,6, 160 col.4-7, 190 col.4-7 si negative si pozitive
