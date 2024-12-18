@@ -1,4 +1,13 @@
-Trebuie de modificat regula 
---Anexa 1 Valorile trebuie sa fie pozitive inafara de: Doar negative: rd.450
-col.4,5, 470 col.4,5, 580 col.5 Si negative si pozitive: 550 col.5, 560
-col.4,5, 570 col.5, 590 col.4,5, 620 col.4,5
+1. Stabilirea unui calendar regulat pentru ședințe de informare (ex. lunar, trimestrial).  
+2. Crearea unui mediu deschis pentru dialog în timpul întâlnirilor.  
+3. Întocmirea fișelor personalizate cu rezultatele evaluărilor și observațiilor copilului.  
+4. Explicarea detaliată a progreselor în fiecare domeniu de dezvoltare (cognitiv, emoțional, fizic, social).  
+5. Trimiterea actualizărilor despre progresul copilului prin e-mail sau aplicații mobile (ex. grupuri de WhatsApp).  
+6. Crearea unor rapoarte vizuale simplificate pentru ușurința înțelegerii (grafice, tabele).  
+7. Furnizarea unor sugestii practice pentru continuarea activităților educaționale și de dezvoltare.  
+8. Consilierea părinților în abordarea dificultăților specifice ale copilului.  
+9. Discutarea strategiilor de sprijin pentru următoarea perioadă, în funcție de progresul copilului.  
+10. Stabilirea unor obiective comune pentru acasă și Centru.  
+11. Încurajarea părinților să trimită feedback despre activitățile realizate acasă.  
+12. Oferirea de răspunsuri rapide la întrebările și preocupările părinților.  
+
