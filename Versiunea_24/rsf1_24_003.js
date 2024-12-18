@@ -476,8 +476,12 @@
     };
 
     webform.validators.validate_rsf1_a1 = function () {
+        var values = Drupal.settings.mywebform.values;
         msg = concatMessage('57-041', '', Drupal.t("Anexa 1 Valoarea trebuie sa fie pozitivă"));
         validatePositiveFields('.annex-1', msg, 41);
+        validateAnnex1(values);
+
+
 
         if (!isTableCompleted('table1')) {
             webform.warnings.push({
@@ -775,6 +779,65 @@
         }
     }
 
+
+    //------------------------------------------------------------
+    function validateAnnex1(values) {
+        var onlyNegative = {
+            '450': [4, 5],
+            '470': [4, 5],
+            '580': [5]
+        };
+
+        var negativeAndPositive = {
+            '550': [5],
+            '560': [4, 5],
+            '570': [5],
+            '590': [4, 5],
+            '620': [4, 5]
+        };
+
+        var errors = [];
+
+        for (var fieldName in values) {
+            if (values.hasOwnProperty(fieldName)) {
+                var match = fieldName.match(/dec_table1_row_r(\d+)c(\d+)/);
+                if (match) {
+                    var row = match[1];
+                    var col = parseInt(match[2]);
+                    var value = parseFloat(values[fieldName]);
+
+                    if (value < 0) {
+                        if (!(onlyNegative[row] && onlyNegative[row].includes(col)) &&
+                            !(negativeAndPositive[row] && negativeAndPositive[row].includes(col))) {
+                            errors.push({
+                                fieldName: fieldName,
+                                message: `Valoarea din rândul ${row} coloana ${col} nu poate fi negativă.`
+                            });
+                        }
+                    } else if (value > 0) {
+                        if (onlyNegative[row] && onlyNegative[row].includes(col)) {
+                            errors.push({
+                                fieldName: fieldName,
+                                message: `Valoarea din rândul ${row} coloana ${col} trebuie să fie negativă.`
+                            });
+                        }
+                    }
+                }
+            }
+        }
+
+        errors.forEach(function (error) {
+            webform.errors.push({
+                fieldName: error.fieldName,
+                index: 0,
+                weight: 10,
+                msg: error.message
+            });
+        });
+    }
+
+    
+    //----------------------------------------------------------------
     function validate_autofields(item) {
         var values = Drupal.settings.mywebform.values;
         if (item.callback() != values[item.rezField]) {
