@@ -86,7 +86,19 @@
     webform.validators.validate_rsf1_1 = function () {
         var values = Drupal.settings.mywebform.values;
 
+//-----------------------------------------------------------------------
 
+        var employeeErrors = validateEmployeeFields(values);
+
+        // Push errors into webform.errors
+        employeeErrors.forEach(function (error) {
+            webform.errors.push({
+                'fieldName': error.fieldName,
+                'index': 0,
+                'weight': 10,
+                'msg': error.message
+            });
+        });
         //---------------------------------------------------------------------
 
         var fieldError = validateFieldNoHieroglyphs('Entitatea', values.dec_fiscCod_name);
@@ -823,6 +835,32 @@
     }
 
 
+//------------------------------------------------------------------------
+
+    function validateEmployeeFields(values) {
+        var errors = [];
+
+        // Extract the values of the fields
+        var nrEmployees = parseInt(values.dec_fiscCod_nrEmployees) || 0; // Defaults to 0 if null or undefined
+        var employeesAbs = values.dec_fiscCod_employeesAbs; // Can be null or undefined
+
+        // Validation logic
+        if ((nrEmployees === 0 || !nrEmployees) && !employeesAbs) {
+            // Case 1: nrEmployees is 0 or null and employeesAbs is null
+            errors.push({
+                fieldName: 'dec_fiscCod_employeesAbs', 
+                message: `Cod eroare:57-207 - Dacă numărul mediu al salariaților în perioada de gestiune este zero, atunci trebuie să fie selectat 'Confirmați lipsa salariaților'.`
+            });
+        } else if (!employeesAbs && nrEmployees > 0) {
+            // Case 2: employeesAbs is not selected and nrEmployees > 0
+            errors.push({
+                fieldName: 'dec_fiscCod_nrEmployees',
+                message: `Cod eroare:57-207 - Dacă există salariați, nu trebuie să fie selectat 'Confirmați lipsa salariaților'.`
+            });
+        }
+
+        return errors;
+    }
 
 
     //------------------------------------------------------------
