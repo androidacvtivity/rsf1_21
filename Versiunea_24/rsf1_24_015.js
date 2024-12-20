@@ -849,13 +849,13 @@
             // Case 1: nrEmployees is 0 or null and employeesAbs is null
             errors.push({
                 fieldName: 'dec_fiscCod_employeesAbs', 
-                message: `Cod eroare:57-207 - Dacă numărul mediu al salariaților în perioada de gestiune este zero, atunci trebuie să fie selectat 'Confirmați lipsa salariaților'.`
+                message: `Cod eroare: 57-207 - Dacă numărul mediu al salariaților în perioada de gestiune este zero, atunci trebuie să fie selectat 'Confirmați lipsa salariaților'.`
             });
-        } else if (!employeesAbs && nrEmployees > 0) {
+        } else if (employeesAbs && nrEmployees > 0) {
             // Case 2: employeesAbs is not selected and nrEmployees > 0
             errors.push({
                 fieldName: 'dec_fiscCod_nrEmployees',
-                message: `Cod eroare:57-207 - Dacă există salariați, nu trebuie să fie selectat 'Confirmați lipsa salariaților'.`
+                message: `Cod eroare: 57-207 - Dacă există salariați, nu trebuie să fie selectat 'Confirmați lipsa salariaților'.`
             });
         }
 
