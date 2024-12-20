@@ -1,3 +1,14 @@
 Anexa.3 Valoarea trebuie sa fie pozitivă inafara de rd.020 col.4-7, 040 col.4-
 7, 150 col.5-7 totdeauna negative 120 col.5-7, 130 col.4-7, 140 col.5-7,
 060 col.5,6, 160 col.4-7, 190 col.4-7 si negative si pozitive
+
+
+
+
+
+Daca  (dec_fiscCod_nrEmployees = 0 sau dec_fiscCod_nrEmployees este null)   
+
+si (dec_fiscCod_employeesAbs este null)  si daca  dec_fiscCod_employeesAbs  nu este selectat atunci dec_fiscCod_nrEmployees > 0)
+
+
+'Dacă numărul mediu al salariaților în perioada de gestiune este zero, atunci trebuie să fie selectat 'Confirmați lipsa salariaților' și invers.  '
