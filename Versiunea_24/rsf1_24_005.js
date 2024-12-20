@@ -470,7 +470,19 @@
                 "msg": Drupal.t('Câmpul nu este completat')
             });
         }
+//---------------------------------
+        var annex3Errors = validateAnnex3(values);
 
+        // Handle the errors if any
+        annex3Errors.forEach(function (error) {
+            webform.errors.push({
+                'fieldName': error.fieldName,
+                'index': 0,
+                'weight': 10,
+                'msg': error.message
+            });
+        });
+//--------------------------------
         webform.validatorsStatus.validate_rsf1_1 = 1;
         validateWebform();
     };
@@ -838,6 +850,74 @@
 
     
     //----------------------------------------------------------------
+    function validateAnnex3(values) {
+        // Define rules for specific rows and columns
+        var onlyNegative = {
+            '020': [4, 5, 6, 7],
+            '040': [4, 5, 6, 7],
+            '150': [5, 6, 7]
+        };
+
+        var negativeAndPositive = {
+            '120': [5, 6, 7],
+            '130': [4, 5, 6, 7],
+            '140': [5, 6, 7],
+            '060': [5, 6],
+            '160': [4, 5, 6, 7],
+            '190': [4, 5, 6, 7]
+        };
+
+        var errors = [];
+
+        // Iterate through all values in Anexa 3
+        for (var fieldName in values) {
+            if (values.hasOwnProperty(fieldName)) {
+                // Extract row and column numbers using regex
+                var match = fieldName.match(/dec_table3_row_r(\d{3})c(\d+)/);
+                if (match) {
+                    var row = match[1]; // Extract row number as three digits
+                    var col = parseInt(match[2]); // Extract column number
+                    var value = parseFloat(values[fieldName]); // Get the field value
+
+                    // Validation logic
+                    if (value < 0) {
+                        // Check if the value is allowed to be negative
+                        if (!(onlyNegative[row] && onlyNegative[row].includes(col)) &&
+                            !(negativeAndPositive[row] && negativeAndPositive[row].includes(col))) {
+                            // Add error if negative values are not allowed
+                            errors.push({
+                                fieldName: fieldName,
+                                message: `Valoarea din rândul ${row} coloana ${col} nu poate fi negativă.`
+                            });
+                        }
+                    } else if (value > 0) {
+                        // Check if positive values are not allowed
+                        if (onlyNegative[row] && onlyNegative[row].includes(col)) {
+                            // Add error if positive values are not allowed
+                            errors.push({
+                                fieldName: fieldName,
+                                message: `Valoarea din rândul ${row} coloana ${col} trebuie să fie negativă.`
+                            });
+                        }
+                    }
+                }
+            }
+        }
+
+        // Output errors or success message
+        if (errors.length > 0) {
+            errors.forEach(function (error) {
+                console.error(error.message); // Log error messages for debugging
+            });
+        } else {
+            console.log("Validarea Anexa 3 s-a realizat cu succes. Nu au fost găsite erori.");
+        }
+
+        return errors;
+    }
+
+
+    //-----------------------------------------------------------------
     function validate_autofields(item) {
         var values = Drupal.settings.mywebform.values;
         if (item.callback() != values[item.rezField]) {
