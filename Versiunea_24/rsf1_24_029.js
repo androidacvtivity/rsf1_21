@@ -921,11 +921,7 @@
 
         // Validate the condition
         if (
-            (annex4Row080Col4 !== 0) &&
-            (annex4Row240Col3 !== 0 &&
-            annex4Row240Col4 !== 0 &&
-            annex1Row620Col5 !== 0 ) &&
-            annex3Row190AllEmpty
+            (annex4Row080Col4 !== 0 || annex4Row240Col4 !== 0)  && annex1Row620Col5 !== 0  
         ) {
             errors.push({
                 fieldName: 'dec_table3_row_r190c4',
