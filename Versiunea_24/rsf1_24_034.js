@@ -86,6 +86,15 @@
     webform.validators.validate_rsf1_1 = function () {
         var values = Drupal.settings.mywebform.values;
 
+
+//         var IDNO = jQuery('#dec_fiscCod_fiscal').val();
+
+//         var CUIIO = jQuery('#dec_fiscCod_cuiio').val();
+
+//  // Analizeaza fisierul csv si dezvolta o validare 
+//  // daca IDNO si CUIIO sunt egale cu unul din fisier sa 
+//  //afiseze eroare - Unitatea statistica trebuie sa prezinte raportul RSF 1
+        
         //--------------------------------------------------------------------
 
         // Call the validation for Anexa 3 completion
@@ -1218,5 +1227,7 @@
     function isEntityMediumLarge() {
         return _isEntityMediumLarge;
     }
+
+
 
 })(jQuery);
