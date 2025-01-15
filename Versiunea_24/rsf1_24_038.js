@@ -873,6 +873,25 @@
         return null;
     }
 
+    // function validateFieldNoHieroglyphs(fieldName, fieldValue) {
+    //     // Define a regular expression to allow Latin, Romanian, Russian characters, numbers, spaces, and basic punctuation
+    //     var allowedCharacters = /^[a-zA-Z0-9\s.,'-\u0400-\u04FF\u0100-\u017F]+$/;
+
+    //     // Check if the field contains unwanted characters
+    //     if (!allowedCharacters.test(fieldValue)) {
+    //         // Add error message including the invalid value
+    //         return {
+    //             fieldName: fieldName,
+    //             message: `Cod eroare - 57-207: Câmpul "${fieldName}" conține caractere nepermise sau hieroglife. Valoarea introdusă: "${fieldValue}". Permise: litere latine, românești, rusești, cifre, spații, și punctuație de bază.`
+    //         };
+    //     }
+
+    //     // Return null if no errors
+    //     return null;
+    // }
+
+
+
 //---------------------------------------------------------------------------
     function validateAnnexes(values) {
         var errors = [];
