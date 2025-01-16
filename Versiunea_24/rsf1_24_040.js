@@ -140,7 +140,7 @@
 
         var fieldError = validateFieldNoHieroglyphs('Entitatea', values.dec_fiscCod_name);
         if (fieldError) {
-            webform.errors.push({
+            webform.warnings.push({
                 'fieldName': fieldError.fieldName,
                 'index': 0,
                 'weight': 10,
@@ -951,8 +951,7 @@
 
         // Validate the condition
         if (
-            (annex4Row080Col4 !== 0 || annex4Row240Col4 !== 0)  && annex1Row620Col5 !== 0  
-        ) {
+            (annex4Row080Col4 !== 0 || annex4Row240Col4 !== 0) && annex1Row620Col5 !== 0 && annex3Row190AllEmpty) {
             errors.push({
                 fieldName: 'dec_table3_row_r190c4',
                 message: 'Cod eroare: 57-089 - Trebuie de completat Anexa 3.',
