@@ -905,12 +905,14 @@
         var annex3Row190HasData = safeParseInt(values.dec_table3_row_r190c4) || safeParseInt(values.dec_table3_row_r190c5) || safeParseInt(values.dec_table3_row_r190c6) || safeParseInt(values.dec_table3_row_r190c7);
         var annex1Row410Col5 = safeParseInt(values.dec_table1_row_r410c5);
         var annex4Row080Col4 = safeParseInt(values.dec_table4_row_r080c4);
-        var annex4Row240Col3 = safeParseInt(values.dec_table4_row_r240c3);
+        var annex4Row230Col4 = safeParseInt(values.dec_table4_row_r230c3);
         var annex4Row240Col4 = safeParseInt(values.dec_table4_row_r240c4);
+
+        var annex4Row060Col4 = safeParseInt(values.dec_table4_row_r060c4);
 
         // Check conditions
         if ((annex3Row190HasData && annex1Row410Col5 > 0) &&
-            (annex4Row080Col4 === 0 && annex4Row240Col3 === 0 && annex4Row240Col4 === 0)) {
+            (annex4Row060Col4 === 0 && annex4Row080Col4 === 0 && annex4Row230Col4 === 0 && annex4Row240Col4 === 0)) {
             errors.push({
                 fieldName: 'dec_table4_row_r080c4',
                 message: 'Cod eroare: 57-076 - Trebuie să fie completată și Anexa 4.',
@@ -1085,7 +1087,7 @@
                             // Add error if negative values are not allowed
                             errors.push({
                                 fieldName: fieldName,
-                                message: `Valoarea din rândul ${row} coloana ${col} nu poate fi negativă.`
+                                message: `Cod Eroare: 57-074 - Valoarea din rândul ${row} coloana ${col} nu poate fi negativă.`
                             });
                         }
                     } else if (value > 0) {
@@ -1094,7 +1096,7 @@
                             // Add error if positive values are not allowed
                             errors.push({
                                 fieldName: fieldName,
-                                message: `Valoarea din rândul ${row} coloana ${col} trebuie să fie negativă.`
+                                message: `Cod Eroare: 57-074 - Valoarea din rândul ${row} coloana ${col} trebuie să fie negativă.`
                             });
                         }
                     }
