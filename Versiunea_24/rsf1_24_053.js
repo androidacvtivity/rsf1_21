@@ -112,6 +112,10 @@
             { IDNO: 1014600032562, CUIIO: 41011151, start: "01.01.2024", end: "30.09.2024" }
         ];
 
+        //This is js code in Drupal
+        //care este logica la 57-005 
+        //startPeriod  01.01.2024 - endPeriod 15.07.2024
+
         var startPeriod = jQuery('#dec_period_from').val().split(".");
         var endPeriod = jQuery('#dec_period_to').val().split(".");
 
