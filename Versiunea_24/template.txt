@@ -26,3 +26,10 @@ si (dec_fiscCod_employeesAbs este null)  si daca  dec_fiscCod_employeesAbs  nu e
 
 
 RSF1. RSF2, RSFPrescurtat, RSF3 
+
+
+Analizeaza https://github.com/androidacvtivity/rsf1_21 
+
+care este diferenta in cod intre rsf1_24_053.js si rsf1_24_054.js 
+cand incacr pe platforma de  test - rsf1_24_054.js - nu lucreaza - 
+
