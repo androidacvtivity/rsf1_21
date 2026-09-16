@@ -12,3 +12,17 @@ si (dec_fiscCod_employeesAbs este null)  si daca  dec_fiscCod_employeesAbs  nu e
 
 
 'Dacă numărul mediu al salariaților în perioada de gestiune este zero, atunci trebuie să fie selectat 'Confirmați lipsa salariaților' și invers.  '
+
+
+'57-005', '', Drupal.t('Data începutului perioadei de raportare nu este corectă')),
+'57-010', '', Drupal.t('Data sfârșitului perioadei de raportare nu este corectă')),
+
+
+57-006,57-005,57-010,57-007 - explica in rusa pentru client 
+
+
+
+
+
+
+RSF1. RSF2, RSFPrescurtat, RSF3 
