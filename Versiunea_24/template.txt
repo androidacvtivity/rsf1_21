@@ -33,3 +33,15 @@ Analizeaza https://github.com/androidacvtivity/rsf1_21
 care este diferenta in cod intre rsf1_24_053.js si rsf1_24_054.js 
 cand incacr pe platforma de  test - rsf1_24_054.js - nu lucreaza - 
 
+Acum - trebuie la aceasta validare de adaugat o conditie - 
+1. daca data curenta este intre luna august  2026 si 31 decembrie 2026  - adica raportul este completat in aceasta perioada - adica anul curent 
+si 
+2. este bifat dec_lichidare (dec_lichidare)
+si 
+3. declaratia este completata 01.01.2026- nu este mai mare data curenta (ziua curenta, luna curenta, anul curent)
+
+sa nu afiseze 57-002 -- este clar ? 
+
+Trebuie noi sa scoatem aceasta validare sa fie ca o functie separata - si apelam functia in webform.validators.validate_rsf1_1 
+
+-- este clar ? 
