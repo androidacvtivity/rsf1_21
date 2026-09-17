@@ -187,8 +187,6 @@
 
         return match;
     }
-    // daca dec_period_to nu este mai mare decat data curenta - sa se afiseze mesajul  - data selectarii nu trebuie sa fie mai mare ca data curenta
-    // ----------------------------------------------------
     function validate_57_002(values) {
         var currentDate = new Date();
 
@@ -204,8 +202,13 @@
         var exceptionStartDate = new Date(2026, 7, 1, 0, 0, 0);
         var exceptionEndDate = new Date(2026, 11, 31, 23, 59, 59);
 
-        var startPeriod = values.dec_period_from ? values.dec_period_from.split(".") : [];
-        var endPeriod = values.dec_period_to ? values.dec_period_to.split(".") : [];
+        var startPeriod = values.dec_period_from
+            ? values.dec_period_from.split(".")
+            : [];
+
+        var endPeriod = values.dec_period_to
+            ? values.dec_period_to.split(".")
+            : [];
 
         if (
             currentDate >= exceptionStartDate &&
@@ -232,7 +235,14 @@
                 0
             );
 
-            var requiredStartDate = new Date(2026, 0, 1, 0, 0, 0);
+            var requiredStartDate = new Date(
+                2026,
+                0,
+                1,
+                0,
+                0,
+                0
+            );
 
             // Comparam doar data calendaristica pentru dec_period_to.
             var currentDay = new Date(
@@ -243,6 +253,24 @@
                 0,
                 0
             );
+
+            // dec_period_to nu trebuie sa fie mai mare decat data curenta.
+            if (periodToDate > currentDay) {
+                webform.errors.push({
+                    'fieldName': 'dec_period_to',
+                    'index': 0,
+                    'weight': 2,
+                    'msg': concatMessage(
+                        '57-002',
+                        '',
+                        Drupal.t(
+                            'Data selectată nu trebuie să fie mai mare decât data curentă'
+                        )
+                    ),
+                });
+
+                return;
+            }
 
             if (
                 periodFromDate.getTime() === requiredStartDate.getTime() &&
@@ -262,7 +290,9 @@
             'msg': concatMessage(
                 '57-002',
                 '',
-                Drupal.t('Termenul prezentarii Situațiilor financiare a expirat')
+                Drupal.t(
+                    'Termenul prezentarii Situațiilor financiare a expirat'
+                )
             ),
         };
 
@@ -272,10 +302,22 @@
             '1007607008364'
         ];
 
-        var plusDays = isLeap(currentDate.getFullYear()) ? 121 : 120;
+        var plusDays = isLeap(
+            currentDate.getFullYear()
+        )
+            ? 121
+            : 120;
 
-        if (excludeIdno.indexOf(values.dec_fiscCod_fiscal) !== -1) {
-            plusDays = isLeap(currentDate.getFullYear()) ? 212 : 211;
+        if (
+            excludeIdno.indexOf(
+                values.dec_fiscCod_fiscal
+            ) !== -1
+        ) {
+            plusDays = isLeap(
+                currentDate.getFullYear()
+            )
+                ? 212
+                : 211;
         }
 
         var validDate = new Date(
