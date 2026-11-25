@@ -320,13 +320,13 @@
             }
         }
 
-        // Termen fix, inclusiv 30.11.2026, numai pentru perioada exacta.
+        // Termen fix, inclusiv 05.12.2026, numai pentru perioada exacta.
         var nonCalendarMatch = getNonCalendar2026(values, false);
         if (nonCalendarMatch &&
             values.dec_period_from === nonCalendarMatch.start &&
             values.dec_period_to === nonCalendarMatch.end &&
             Number(values.nalogPeriodYear) === 2026) {
-            if (currentDate >= new Date(2026, 11, 1)) {
+            if (currentDate >= new Date(2026, 11, 6)) {
                 webform.errors.push({
                     'index': 0,
                     'fieldName': '',
