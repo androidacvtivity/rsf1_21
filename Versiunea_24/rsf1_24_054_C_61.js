@@ -3,6 +3,14 @@
     'processed': false, 'tables': {}
   };
   var idnoCuiioExceptionList = [];
+  // Exercitiul financiar necalendaristic 2026 (01.07.2025 - 30.06.2026).
+  var nonCalendar2026 = [
+    { IDNO: 1003600000730, CUIIO: 3941230 },
+    { IDNO: 1016600007074, CUIIO: 41108494 },
+    { IDNO: 1017600019696, CUIIO: 41171185 },
+    { IDNO: 1003600024202, CUIIO: 4504178 },
+    { IDNO: 1019600024272, CUIIO: 41334440 }
+  ];
   var _isEntityMediumLarge = false;
   var _isEntityMediumMicro = false;
 
@@ -126,9 +134,41 @@
         return new Date(parts[2], parts[1] - 1, parts[0]);
     }
 
+    // Exceptia fixa nu depinde de obiectul extern rsf1.
+    function getNonCalendar2026(values, forDatepicker) {
+        values = values || {};
+        if (values.dec_lichidare) {
+            return false;
+        }
+        var idno = Number(values.dec_fiscCod_fiscal || jQuery('#dec_fiscCod_fiscal').val());
+        var cuiio = Number(values.dec_fiscCod_cuiio || jQuery('#dec_fiscCod_cuiio').val());
+        var reportYear = Number(values.nalogPeriodYear);
+        var end = String(values.dec_period_to || '');
+        var start = String(values.dec_period_from || '');
+        var relevant = reportYear === 2026 || /\.2026$/.test(end) ||
+            start === '01.07.2025' ||
+            (forDatepicker && new Date().getFullYear() === 2026);
+        if (!relevant || !nonCalendar2026.some(function (entry) {
+            return entry.IDNO === idno && entry.CUIIO === cuiio;
+        })) {
+            return false;
+        }
+        return {
+            IDNO: idno, CUIIO: cuiio,
+            start: '01.07.2025', end: '30.06.2026', periodYear: 2026,
+            allowedStartDate: new Date(2025, 6, 1),
+            allowedEndDate: new Date(2026, 5, 30)
+        };
+    }
+
     function isTaxpayerInExceptionList(useCuiio) {
         if (typeof useCuiio === 'undefined') {
             useCuiio = true;
+        }
+
+        var specialMatch = getNonCalendar2026(Drupal.settings.mywebform.values, useCuiio === false);
+        if (specialMatch) {
+            return specialMatch;
         }
 
         // No rsf1 data -> no special exception validation.
@@ -156,10 +196,6 @@
     function validate_57_005_exception() {
         // Daca rsf1 lipseste (sau contribuabilul nu este in lista),
         // se aplica validarea generala 57-005.
-        if (!idnoCuiioExceptionList.length) {
-            return false;
-        }
-
         var match = isTaxpayerInExceptionList();
         if (!match) {
             return false;
@@ -282,6 +318,25 @@
             ) {
                 return;
             }
+        }
+
+        // Termen fix, inclusiv 30.11.2026, numai pentru perioada exacta.
+        var nonCalendarMatch = getNonCalendar2026(values, false);
+        if (nonCalendarMatch &&
+            values.dec_period_from === nonCalendarMatch.start &&
+            values.dec_period_to === nonCalendarMatch.end &&
+            Number(values.nalogPeriodYear) === 2026) {
+            if (currentDate >= new Date(2026, 11, 1)) {
+                webform.errors.push({
+                    'index': 0,
+                    'fieldName': '',
+                    'weight': 2,
+                    'msg': concatMessage('57-002', '', Drupal.t(
+                        'Termenul prezentarii Situațiilor financiare a expirat'
+                    ))
+                });
+            }
+            return;
         }
 
         // Logica normala 57-002 ramane neschimbata.
@@ -418,7 +473,7 @@
          * Exceptia existenta pentru contribuabilii din obiectul rsf1:
          * pentru ei dec_period_to trebuie sa coincida cu allowedEndDate.
          */
-        if (idnoCuiioExceptionList.length) {
+        {
             var match = isTaxpayerInExceptionList();
 
             if (match && endPeriod.length === 3) {
