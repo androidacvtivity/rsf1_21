@@ -223,6 +223,12 @@
             });
         }
 
+
+        // De aici sunt validările pentru perioada de raportare și anexele obligatorii
+        // dec_lichidare
+        // dec_period_from
+        // dec_period_to
+        // In ce validari participa aceste variabile ? 
         var currentDate = new Date();
         var lastYear = new Date().getFullYear() - 1;
         var endPeriod = values.dec_period_to.split(".");
